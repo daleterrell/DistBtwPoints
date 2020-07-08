@@ -18,7 +18,7 @@ public class MyPoint {
     // that calculated and returns the distance between
     // MyPoint object and another point
     public double distance(int x, int y) {
-        return Math.sqrt((y2 - y1) + (y2 - y1) + (x2 - x1) + (x2 - x1));
+        return Math.sqrt((y - this.y) * (y - this.y) + (x - this.x) * (x - this.x));
     }
 
     public int getX() {
